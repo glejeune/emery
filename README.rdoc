@@ -1,0 +1,110 @@
+= Emery =
+
+NodeJS "à la" Ruby
+
+== class and module ==
+
+== Enumerable ==
+
+The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method each, which yields successive members of the collection. If Enumerable#max, min, or sort is used, the objects in the collection must also implement a meaningful <=> operator, as these methods rely on an ordering between members of the collection.
+
+=== Usage ===
+
+	var Enumerable = require('emery/enumerable').Enumerable
+
+=== Methods ===
+
+* Enumerable#all
+* Enumerable#any
+* Enumerable#map
+* Enumerable#collect
+* Enumerable#count
+* Enumerable#cycle
+* Enumerable#drop
+* Enumerable#drop_while
+* Enumerable#each_slice
+* Enumerable#each_cons
+* Enumerable#each_with_index
+* Enumerable#each_with_object
+* Enumerable#find
+* Enumerable#find_all
+* Enumerable#find_index
+* Enumerable#grep
+* Enumerable#group_by
+* Enumerable#include
+* Enumerable#inject
+* Enumerable#max
+* Enumerable#max_by
+* Enumerable#min
+* Enumerable#min_by
+* Enumerable#minman
+* Enumerable#minmax_by
+* Enumerable#none
+* Enumerable#one
+* Enumerable#reject
+* Enumerable#reverse_each
+* Enumerable#sort
+* Enumerable#sort_by
+* Enumerable#take
+* Enumerable#take_while
+
+== Array ==
+
+Arrays are ordered, integer-indexed collections of any object. Array indexing starts at 0, as in C or Java. A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
+
+=== Usage ===
+
+  var Array = require('emery/array').Array;
+
+=== Included module ===
+
+	Enumerable
+
+=== Methods ===
+
+* Array#each
+* Array#map$
+* Array#collect$
+* Array#push
+* Array#unshift
+* Array#concat
+* Array#at
+* Array#pop
+* Array#shift
+* Array#slice
+* Array#slice$
+* Array#pretty_print
+* Array#to_s
+* Array#inspect
+* Array#index
+* Array#delete
+* Array#delete_at
+* Array#delete_if
+* Array#each_index
+* Array#empty
+* Array#eql
+* Array#fetch
+* Array#fill
+* Array#first
+* Array#take
+* Array#replace
+* Array#insert
+* Array#join
+* Array#last
+* Array#reject$
+* Array#reverse
+* Array#reverse$
+* Array#shuffle
+* Array#shuffle$
+* Array#take_while
+* Array#uniq
+* Array#uniq$
+* Array#select
+* Array#values_at
+* Array#clear
+* Array#compact
+* Array#compact$
+
+== Hash ==
+
+== Range ==
