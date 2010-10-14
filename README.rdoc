@@ -4,13 +4,48 @@ NodeJS "à la" Ruby
 
 == class and module
 
+=== Create a class
+
+  var class = require('emery/class').class;
+  
+  exports.MyClass = MaClass = class( ParentClass, {
+    // Constructor
+    initialize: function() { ... },
+  
+    // Instance method
+    methodA: function() { ... },
+  
+    // Class method
+    self$methodB: function() { ... },
+  
+    ...
+  } );
+  MaClass.include(MyModule);
+  
+  MaClass.methodB();
+  
+  var myInstance = new MaClass();
+  myInstance.methodA();
+
+=== Create a module
+
+  var module = require('emery/module').module;
+  
+  exports.MyModule = MyModule = module({
+    method1: function() { ... },
+  
+    // ...
+  });
+  
+  MyModule.method1();
+
 == Enumerable
 
 The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method each, which yields successive members of the collection. If Enumerable#max, min, or sort is used, the objects in the collection must also implement a meaningful <=> operator, as these methods rely on an ordering between members of the collection.
 
 === Usage
 
-	var Enumerable = require('emery/enumerable').Enumerable
+  var Enumerable = require('emery/enumerable').Enumerable
 
 === Methods
 
@@ -58,7 +93,7 @@ Arrays are ordered, integer-indexed collections of any object. Array indexing st
 
 === Included module
 
-	Enumerable
+  Enumerable
 
 === Methods
 
