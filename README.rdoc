@@ -78,6 +78,7 @@ The Enumerable mixin provides collection classes with several traversal and sear
 * Enumerable#one
 * Enumerable#reject
 * Enumerable#reverse_each
+* Enumerable#select
 * Enumerable#sort
 * Enumerable#sort_by
 * Enumerable#take
@@ -134,7 +135,6 @@ Arrays are ordered, integer-indexed collections of any object. Array indexing st
 * Array#take_while
 * Array#uniq
 * Array#uniq$
-* Array#select
 * Array#values_at
 * Array#clear
 * Array#compact
@@ -143,3 +143,43 @@ Arrays are ordered, integer-indexed collections of any object. Array indexing st
 == Hash
 
 == Range
+
+== Exceptions
+
+=== Error classes list
+
+* ArgumentError
+* IndexError
+* KeyError
+* NameError
+* NotImplementedError
+* RangeError
+* RegexpError
+* RuntimeError
+* StandardError
+* SyntaxError
+* TypeError
+* ZeroDivisionError
+
+=== Raise an exception
+
+  throw( new Exception("message") )
+
+Example :
+
+  var ZeroDivisionError = require('emery/exception').ZeroDivisionError;
+  
+  function myFunction( value ) {
+    var ret = 100/value;
+    
+    if( ret == Infinity ) throw( new ZeroDivisionError("Zero division not allowed in myFunction!") );
+    
+    return( 100/value );
+  }
+  
+  try {
+    v = myFunction( 0 );
+  }
+  catch(e) {
+    console.log(e); //=> #<ZeroDivisionError: Zero division not allowed in myFunction!>
+  }
