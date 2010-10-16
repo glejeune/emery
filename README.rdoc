@@ -2,6 +2,8 @@
 
 NodeJS "à la" Ruby
 
+== Install
+
 == class and module
 
 === Create a class
@@ -218,3 +220,21 @@ Example :
   catch(e) {
     console.log(e); //=> #<ZeroDivisionError: Zero division not allowed in myFunction!>
   }
+
+== Note on Patches/Pull Requests
+
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+== Inspiration
+
+This lib was truly inspired by the awsome JS.Class (http://jsclass.jcoglan.com/) and php.js (http://phpjs.org)
+
+== Copyright
+
+Copyright (c) 2010 Gregoire Lejeune. See LICENSE for details.
