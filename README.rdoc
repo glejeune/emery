@@ -53,8 +53,6 @@ The Enumerable mixin provides collection classes with several traversal and sear
 
 * Enumerable#all
 * Enumerable#any
-* Enumerable#map
-* Enumerable#collect
 * Enumerable#count
 * Enumerable#cycle
 * Enumerable#drop
@@ -79,20 +77,19 @@ The Enumerable mixin provides collection classes with several traversal and sear
 * Enumerable#none
 * Enumerable#one
 * Enumerable#reject
-* Enumerable#reverse_each
 * Enumerable#select
 * Enumerable#sort
 * Enumerable#sort_by
 * Enumerable#take
 * Enumerable#take_while
 
-== Array
+== EArray
 
-Arrays are ordered, integer-indexed collections of any object. Array indexing starts at 0, as in C or Java. A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
+EArrays are ordered, integer-indexed collections of any object. EArray indexing starts at 0, as in C or Java. A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
 
 === Usage
 
-  var Array = require('emery/array').Array;
+  var EArray = require('emery/array').EArray;
 
 === Included module
 
@@ -100,53 +97,56 @@ Arrays are ordered, integer-indexed collections of any object. Array indexing st
 
 === Methods
 
-* Array#each
-* Array#map$
-* Array#collect$
-* Array#push
-* Array#unshift
-* Array#concat
-* Array#at
-* Array#pop
-* Array#shift
-* Array#slice
-* Array#slice$
-* Array#pretty_print
-* Array#to_s
-* Array#inspect
-* Array#index
-* Array#delete
-* Array#delete_at
-* Array#delete_if
-* Array#each_index
-* Array#empty
-* Array#eql
-* Array#fetch
-* Array#fill
-* Array#first
-* Array#take
-* Array#replace
-* Array#insert
-* Array#join
-* Array#last
-* Array#reject$
-* Array#reverse
-* Array#reverse$
-* Array#shuffle
-* Array#shuffle$
-* Array#take_while
-* Array#uniq
-* Array#uniq$
-* Array#values_at
-* Array#clear
-* Array#compact
-* Array#compact$
+* EArray#each
+* EArray#map
+* EArray#collect
+* EArray#map$
+* EArray#collect$
+* EArray#push
+* EArray#unshift
+* EArray#concat
+* EArray#at
+* EArray#pop
+* EArray#shift
+* EArray#slice
+* EArray#slice$
+* EArray#pretty_print
+* EArray#to_s
+* EArray#inspect
+* EArray#index
+* EArray#delete
+* EArray#delete_at
+* EArray#delete_if
+* EArray#each_index
+* EArray#empty
+* EArray#eql
+* EArray#fetch
+* EArray#fill
+* EArray#first
+* EArray#take
+* EArray#replace
+* EArray#insert
+* EArray#join
+* EArray#last
+* EArray#reject$
+* EArray#reverse_each
+* EArray#reverse
+* EArray#reverse$
+* EArray#shuffle
+* EArray#shuffle$
+* EArray#take_while
+* EArray#uniq
+* EArray#uniq$
+* EArray#values_at
+* EArray#clear
+* EArray#compact
+* EArray#compact$
 
-== Hash
+== EHash
 
 === Usage
 
-  var Hash = require('emery/hash').Hash;
+  var EHash = require('emery/hash').EHash;
 
 === Included module
 
@@ -154,11 +154,11 @@ Arrays are ordered, integer-indexed collections of any object. Array indexing st
 
 === Methods
 
-== Range
+== ERange
 
 === Usage
 
-  var Range = require('emery/range').Range;
+  var ERange = require('emery/range').ERange;
 
 === Included module
 
@@ -166,20 +166,20 @@ Arrays are ordered, integer-indexed collections of any object. Array indexing st
 
 === Methods
 
-* Range#begin
-* Range#cover
-* Range#each
-* Range#end
-* Range#eql
-* Range#exclude_end
-* Range#first
-* Range#hash
-* Range#last
-* Range#member
-* Range#inspect
-* Range#pretty_print
-* Range#to_s
-* Range#step
+* ERange#begin
+* ERange#cover
+* ERange#each
+* ERange#end
+* ERange#eql
+* ERange#exclude_end
+* ERange#first
+* ERange#hash
+* ERange#last
+* ERange#member
+* ERange#inspect
+* ERange#pretty_print
+* ERange#to_s
+* ERange#step
 
 == Exceptions
 
@@ -190,7 +190,7 @@ Arrays are ordered, integer-indexed collections of any object. Array indexing st
 * KeyError
 * NameError
 * NotImplementedError
-* RangeError
+* ERangeError
 * RegexpError
 * RuntimeError
 * StandardError
@@ -227,7 +227,7 @@ Example :
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
   future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
+* Commit, do not mess with jakefile, version, or history.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
