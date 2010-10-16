@@ -142,7 +142,42 @@ Arrays are ordered, integer-indexed collections of any object. Array indexing st
 
 == Hash
 
+=== Usage
+
+  var Hash = require('emery/hash').Hash;
+
+=== Included module
+
+  Enumerable
+
+=== Methods
+
 == Range
+
+=== Usage
+
+  var Range = require('emery/range').Range;
+
+=== Included module
+
+  Enumerable
+
+=== Methods
+
+* Range#begin
+* Range#cover
+* Range#each
+* Range#end
+* Range#eql
+* Range#exclude_end
+* Range#first
+* Range#hash
+* Range#last
+* Range#member
+* Range#inspect
+* Range#pretty_print
+* Range#to_s
+* Range#step
 
 == Exceptions
 
