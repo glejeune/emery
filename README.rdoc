@@ -141,6 +141,9 @@ EArrays are ordered, integer-indexed collections of any object. EArray indexing 
 * EArray#clear
 * EArray#compact
 * EArray#compact$
+* EArray#to_json
+* EArray#get
+* EArray#set
 
 == EHash
 

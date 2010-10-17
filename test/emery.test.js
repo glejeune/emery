@@ -15,6 +15,13 @@ module.exports = {
 		assert.equal(true, Emery.ISDIGIT(123));
   },
 
+  'ISNULL': function(assert) {
+    assert.equal(false, Emery.ISNULL('hello'));
+		assert.equal(true, Emery.ISNULL(null));
+		assert.equal(false, Emery.ISNULL());
+		assert.equal(false, Emery.ISNULL(undefined));
+  },
+
 	'CLASS': function(assert) {
 		assert.equal("EArray", Emery.CLASS(new EArray()));
 		assert.equal("EHash", Emery.CLASS(new EHash()));
