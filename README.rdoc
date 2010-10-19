@@ -83,6 +83,22 @@ The Enumerable mixin provides collection classes with several traversal and sear
 * Enumerable#take
 * Enumerable#take_while
 
+== EString
+
+=== Usage
+
+  var EString = require('emery/string').EString;
+
+=== Methods
+
+== ENumber
+
+=== Usage
+
+  var ENumber = require('emery/number').ENumber;
+
+=== Methods
+
 == EArray
 
 EArrays are ordered, integer-indexed collections of any object. EArray indexing starts at 0, as in C or Java. A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
