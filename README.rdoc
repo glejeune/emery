@@ -182,6 +182,8 @@ EArrays are ordered, integer-indexed collections of any object. EArray indexing 
 * ERange#inspect
 * ERange#pretty_print
 * ERange#to_s
+* ERange#to_js
+* ERange#to_a
 * ERange#step
 
 == Exceptions
