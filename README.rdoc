@@ -173,6 +173,37 @@ EArrays are ordered, integer-indexed collections of any object. EArray indexing 
 
 === Methods
 
+* EHash#replace
+* EHash#each
+* EHash#each_pair
+* EHash#each_key
+* EHash#each_value
+* EHash#clear
+* EHash#empty
+* EHash#values
+* EHash#has_value
+* EHash#value
+* EHash#keys
+* EHash#has_key
+* EHash#member
+* EHash#key
+* EHash#map
+* EHash#invert
+* EHash#to_js
+* EHash#clone
+* EHash#merge
+* EHash#merge$
+* EHash#update
+* EHash#delete
+* EHash#delete_if
+* EHash#fetch
+* EHash#pretty_print
+* EHash#to_s
+* EHash#inspect
+* EHash#set
+* EHash#store
+* EHash#get
+
 == ERange
 
 === Usage
